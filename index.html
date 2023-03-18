@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width,initial-scale=o.1">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
         <title>Side Hustle Week 1 Task</title>
-        <link rel="stylesheet"href="styles.css">
     </head>
-<body>
-     <div>
-          <h1>BIODATA</h1>
-         <form onsubmit="myFunction()">
-          <label for="fullname" class="Label">Name:</label><br>
-          <input type="text" id="fullname" placeholder="Name" class="text"required ><br><br>
-          <label for="email"class="Label" >E-mail:</label><br>
-          <input type="email" id="email" placeholder="Email" class="text" required><br><br>
-          <label for="phone number" class="Label">Phone Number:</label><br>
-          <input type="text" id="phone number" placeholder="Phone number" class="text" required><br><br>
-          <label for="gender">Gender</label><br>
-          <select id="gender" name="gender" required>
-          <option value="male" required>Male</option>
-          <option value="female" required>Female</option>
-          </select><br><br>
-          <label for="password" class="Label">Password:</label><br>
-          <input type="password" name="password" id="name" class="text" required><br><br>
-          <button>Submit</button>
-         </form>
-     </div>
-    </border>
+    <body>
+        <form onsubmit="myFunction()">
+            <fieldset id="fieldset">
+                <h1>BIODATA</h1>
+                <label for="fullname">Name:</label><br>
+               <div>
+                <input type="text" id="fullname" placeholder="Name"required ><br><br></div>
+                <div class="email">
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" placeholder="example@email.com" required><br><br></div>
+                <div class="phone number">
+                <label for="phone number">Phone Number:</label><br>
+                <input type="phone number" id="phonenumber" placeholder="Phone number" required><br><br></div>                
+                <div class="gender">
+                <label for="gender">Gender</label><br>
+                <select id="gender" name="gender" required>
+                <option value="male" required>Male</option>
+                <option value="female" required>Female</option>
+                </select><br><br></div>
+                <div class="password">
+                <label for="password">Password:</label><br>
+                <input type="password" name="password" id="password" required><br><br>
+                <button>Submit</button>
+             </fieldset>
+        </form>
         <script>
             function myFunction() {
               alert("The form was submitted");
             }
             </script>
- </body>
+    </body>
 </html>
